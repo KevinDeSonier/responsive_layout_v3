@@ -42,7 +42,8 @@ a {
   padding: .75em 30%;
 }
 
-header ul {
+header ul,
+.foot-nav {
   list-style-type: none;
   padding: 2em 0em;
   margin:  0;
@@ -50,7 +51,8 @@ header ul {
   width: 90%;
 }
 
-header ul li {
+header ul li,
+.foot-nav li {
   font-weight: bold;
   background-color: white;
   margin: 5px auto;
@@ -74,14 +76,15 @@ footer {
 
 /* Class Styles */
 
-.wrapper {
+.wrapper,
+.footer-foot {
   width: 90%;
   margin: 0 auto;
 }
 
 .profile-image {
   width: 70%;
-  margin:  5px auto;
+  /* margin:  5px auto; */
 }
 
 .portfolio-piece {
@@ -96,7 +99,7 @@ footer strong {
   font-weight: normal;
 }
 
-.foot-nav {
+.footer-foot {
   color: black;
   font-size: 0.85em;
   padding: 2em 0;
@@ -104,15 +107,144 @@ footer strong {
   border-top: 1px solid #dcdcdc;
 }
 
-.foot-nav p {
+.footer-foot p {
   float: left;
   padding: 0;
   margin: 0;
   font-weight: bold;
 }
 
-.foot-nav a {
+.back-to-top {
   float: right;
   padding: 0;
   font-weight: bold;
 }
+
+.foot-nav {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+  header {
+    padding: 4em 0;
+  }
+
+  header ul {
+    padding: 1em 0em 3em;
+  }
+
+  header ul li,
+  .foot-nav li {
+    display: inline-block;
+    background-color: transparent;
+    padding: .5em;
+  }
+
+  a {
+    padding: .75em;
+  }
+
+  h3 {
+    font-size: 1.14em;
+  }
+
+  footer .wrapper{
+    font-size: 1.214em;
+    padding: 0 5em;
+  }
+
+  .profile-image {
+    float: right;
+    width: 40%;
+  }
+
+  .about-me {
+    float: left;
+    text-align: left;
+    width: 60%;
+    padding-right: 20px;
+    margin: 0;
+    font-size: 1.35em;
+  }
+
+  .portfolio-piece {
+    float: left;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .portfolio-piece p{
+    padding: 0 3em;
+    font-size: 1em;
+  }
+
+  .footer-foot p{
+    margin: 5px 0;
+    padding: .5em 0;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .foot-nav {
+    display: inline-block;
+    float: right;
+    width: auto;
+    padding: 0;
+  }
+
+  /* Clear Fix */
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  header h1 {
+    float: left;
+    width: auto;
+    font-size: 1.57em;
+  }
+
+  .main-nav {
+    float: right;
+    width: auto;
+    padding-top: 0;
+  }
+
+  .profile-image {
+    width: 43%;
+  }
+
+  .about-me {
+    width: 55%;
+    padding-right: 30px;
+  }
+
+  .portfolio-piece {
+    width: 33.33%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .portfolio-piece p {
+    padding: 0 1.35em;
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+  footer .wrapper {
+    padding: 0 12em;
+  }
