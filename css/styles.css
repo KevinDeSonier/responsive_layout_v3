@@ -6,20 +6,20 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin:  0;
+  margin: 0;
   font-size: 14px;
 }
 
 header,
 footer {
   background-color: #f9f9f9;
-  width:  100%;
+  width: 100%;
   padding-top: 2em;
-  padding-bottom:  2em;
+  padding-bottom: 2em;
 }
 
 h1 {
-  margin:  0;
+  margin: 0;
   font-size: 1.785em;
 }
 
@@ -46,7 +46,7 @@ header ul,
 .foot-nav {
   list-style-type: none;
   padding: 2em 0em;
-  margin:  0;
+  margin: 0;
   display: inline-block;
   width: 90%;
 }
@@ -67,7 +67,7 @@ img {
 p {
   font-weight: lighter;
   font-size: 1.143em;
-  line-height:  1.5;
+  line-height: 1.5;
 }
 
 footer {
@@ -79,12 +79,12 @@ footer {
 .wrapper,
 .footer-foot {
   width: 90%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .profile-image {
   width: 70%;
-  /* margin:  5px auto; */
 }
 
 .portfolio-piece {
@@ -248,3 +248,5 @@ footer strong {
   footer .wrapper {
     padding: 0 12em;
   }
+
+}
